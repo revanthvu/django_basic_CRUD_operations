@@ -1,0 +1,16 @@
+<html>
+<head>
+    <title>grade finding</title>
+</head>
+<body>
+    {% if grade >= 90 %}
+        <h1>grade = A</h1>
+    {% elif grade >= 80 and grade < 90 %}
+        <h1>grade = B</h1>
+    {% elif grade >= 70 and grade < 80 %}
+        <h1>grade = C</h1>
+    {% else %}
+        <h1>grade = D</h1>
+    {% endif %}
+</body>
+</html>

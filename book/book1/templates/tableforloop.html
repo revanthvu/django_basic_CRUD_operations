@@ -1,0 +1,19 @@
+<html>
+<head>
+    <title>tabledataloop</title>
+</head>
+<body>
+    <table border="1">
+        <tr>
+            <th>Name</th>
+            <th>Email</th>
+        </tr>
+        {% for data in user_data %}
+        <tr>
+            <td>{{data.name}}</td>
+            <td>{{data.email}}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>

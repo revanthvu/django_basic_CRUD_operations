@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Netflix Clone</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:black;
+    color:white;
+}
+
+/* HERO SECTION */
+
+.hero{
+    width:100%;
+    height:100vh;
+
+    background-image:
+    linear-gradient(
+        to top,
+        rgba(0,0,0,0.8) 0%,
+        rgba(0,0,0,0.2) 50%,
+        rgba(0,0,0,0.8) 100%
+    ),
+
+    url("https://wallpapers.com/images/featured/netflix-background-gs7hjuwvv2g0e9fj.jpg");
+
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+
+    display:flex;
+    flex-direction:column;
+}
+
+/* NAVBAR */
+
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:25px 60px;
+}
+
+.logo{
+    width:150px;
+}
+
+.nav-right{
+    display:flex;
+    gap:15px;
+}
+
+.lang-btn{
+    background:rgba(0,0,0,0.5);
+    color:white;
+
+    border:1px solid gray;
+
+    padding:7px 12px;
+    border-radius:4px;
+}
+
+.signin-btn{
+    background:#e50914;
+    color:white;
+
+    border:none;
+
+    padding:8px 18px;
+
+    border-radius:4px;
+    font-weight:bold;
+
+    cursor:pointer;
+}
+
+/* HERO CONTENT */
+
+.hero-content{
+    flex:1;
+
+    display:flex;
+    flex-direction:column;
+
+    justify-content:center;
+    align-items:center;
+
+    text-align:center;
+
+    padding:20px;
+}
+
+.hero-content h1{
+    font-size:70px;
+    font-weight:900;
+
+    max-width:700px;
+
+    margin-bottom:20px;
+}
+
+.hero-content h2{
+    font-size:28px;
+    font-weight:400;
+
+    margin-bottom:20px;
+}
+
+.hero-content p{
+    font-size:20px;
+
+    margin-bottom:20px;
+}
+
+/* EMAIL FORM */
+
+.email-form{
+    display:flex;
+    gap:10px;
+
+    width:100%;
+    max-width:700px;
+}
+
+.email-form input{
+    flex:1;
+
+    padding:18px;
+
+    background:rgba(0,0,0,0.6);
+
+    border:1px solid gray;
+
+    border-radius:4px;
+
+    color:white;
+    font-size:16px;
+}
+
+.get-started{
+    background:#e50914;
+    color:white;
+
+    border:none;
+
+    padding:15px 30px;
+
+    font-size:28px;
+    font-weight:bold;
+
+    border-radius:4px;
+
+    cursor:pointer;
+}
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+    nav{
+        padding:20px;
+    }
+
+    .logo{
+        width:110px;
+    }
+
+    .hero-content h1{
+        font-size:40px;
+    }
+
+    .hero-content h2{
+        font-size:20px;
+    }
+
+    .hero-content p{
+        font-size:16px;
+    }
+
+    .email-form{
+        flex-direction:column;
+    }
+
+    .get-started{
+        width:100%;
+        font-size:20px;
+    }
+
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="hero">
+
+    <!-- NAVBAR -->
+
+    <nav>
+
+        <img
+        src="https://upload.wikimedia.org/wikipedia/commons/0/08/Netflix_2015_logo.svg"
+        class="logo">
+
+        <div class="nav-right">
+
+            <select class="lang-btn">
+                <option>English</option>
+                <option>Hindi</option>
+                <option>Telugu</option>
+                <option>Tamil</option>
+                <option>Malyalam</option>
+                <option>Bengali</option>
+            </select>
+
+            <button class="signin-btn">
+                Sign In
+            </button>
+
+        </div>
+
+    </nav>
+
+    <!-- HERO CONTENT -->
+
+    <div class="hero-content">
+
+        <h1>
+            Unlimited movies, shows, and more
+        </h1>
+
+        <h2>
+            Starts at ₹149. Cancel anytime.
+        </h2>
+
+        <p>
+            Ready to watch? Enter your email to create or restart your membership.
+        </p>
+
+        <div class="email-form">
+
+            <input
+            type="email"
+            placeholder="Email address">
+
+            <button class="get-started">
+                Get Started >
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>
